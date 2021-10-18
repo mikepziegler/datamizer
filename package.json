@@ -1,0 +1,21 @@
+{
+  "name": "datamizer",
+  "version": "0.0.1",
+  "description": "A npm package, that generates random data in any format.",
+  "main": "src/module.js",
+  "bin": "src/cli.js",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikezyeman/datamizer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikezyeman/datamizer/issues"
+  },
+  "homepage": "https://github.com/mikezyeman/datamizer#readme"
+}
