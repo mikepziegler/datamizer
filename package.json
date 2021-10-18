@@ -4,9 +4,7 @@
   "description": "A npm package, that generates random data in any format.",
   "main": "src/module.js",
   "bin": "src/cli.js",
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikezyeman/datamizer.git"
@@ -17,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mikezyeman/datamizer/issues"
   },
-  "homepage": "https://github.com/mikezyeman/datamizer#readme"
+  "homepage": "https://github.com/mikezyeman/datamizer#readme",
+  "dependencies": {
+    "commander": "^8.2.0"
+  }
 }
