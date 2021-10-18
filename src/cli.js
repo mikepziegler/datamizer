@@ -1,21 +1,33 @@
 #!/usr/bin/env node
 
+const { program } = require('commander');
 const version = require('../package.json').version;
 
-const { program } = require('commander');
-program.version(version);
+const DM = require('./module');
 
-console.log("Hello World!");
+var dm = new DM();
+
+program.version(version);
 
 program
     .option('-d, --debug', 'output extra debugging')
     .option('-s, --small', 'small pizza size')
     .option('-p, --pizza-type <type>', 'flavour of pizza');
 
-program.parse(process.argv);
+program
+    .command('generate <source> [destination]')
+    .alias('gen')
+    .option('-f, --file <type>', 'Which type it should export', 'json')
+    .description('generates a file from source in destination')
+    .action((source, destination, options) => {
+        console.log('gen command called');
+        console.log(source);
+        console.log(destination);
+        console.log(options);
 
-const options = program.opts();
-if (options.debug) console.log(options);
-console.log('pizza details:');
-if (options.small) console.log('- small pizza size');
-if (options.pizzaType) console.log(`- ${options.pizzaType}`);
+        dm.randomNumber();
+
+
+    });
+
+program.parse(process.argv);
