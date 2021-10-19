@@ -1,8 +1,7 @@
 
 function Datamizer() {}
 
-Datamizer.prototype.randomNumber = () => {
-    console.log(Math.random());
-}
+// Number Module
+Datamizer.prototype.randomNumber =
 
 module.exports = Datamizer;
