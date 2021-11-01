@@ -2,6 +2,6 @@
 function Datamizer() {}
 
 // Number Module
-Datamizer.prototype.randomNumber =
+Datamizer.prototype
 
 module.exports = Datamizer;
